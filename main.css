@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(#222 ,#111);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-image:linear-gradient(#333, #222 80%  100%);
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+}
+nav{   
+    display: flex;
+    justify-content: space-between;
+    margin:20px ;
+    color: #fff;
+}
+nav .logo{
+   
+    font-size: 35px;
+    font-family: "Dancing Script",cursive;
+    font-weight: 600;
+    letter-spacing: 3px;
+    
+}
+nav .sign{
+    border: 2px solid white;
+    padding-top:10px;
+    padding-left: 40px;
+    font-size: 18px;
+    width:100px;
+    border-radius: 20px;
+    position: relative;
+    left: -100px;
+    top: 50px;
+}
+nav .sign:hover{
+    background-color: #fff;
+    border: 2px solid #111;
+    color: #333;
+    transform: translate(0, -10px);
+    cursor: pointer;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%; 
+  
+}
+
+nav ul :hover{
+    color: #797979;
+    border-bottom: 2px solid #797979;
+    transform: skew(20deg);
+    transform:translate(0,-10px);
+    cursor: pointer;
+  
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+}
+.content .text{
+    color: #fff;
+    letter-spacing: 2px;
+    position: relative;
+    top: -160px;
+    left: 80px;
+}
+.content h2{
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  
+}
+.content p{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin-top: 40px;
+    width: 35%;
+    margin-right: 50px;
+}
+.content .img{
+    width: 50%;
+}
+.content .text #p{
+    color: red;
+    font-size: 22px;
+}
+.content .text #p::after{
+    content: '5.99$';
+    color: green;
+}
+.content .text button{
+    width: 150px;
+    height: 40px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.content .text button:hover{
+    background-color: #333;
+    color: #fff;
+}
+.content .text ul li img{
+    width: 20px;
+    float: left;
+    border-radius: 50%;
+    position: relative;
+    bottom: 220px;
+    right: 60px;
+    cursor: pointer;
+    transition: 1s;
+}
+.content .text ul{
+    display: flex;
+    height: 90px;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style: none;
+}
+.content .text ul li img:hover{
+    transform: rotate(180deg);
+}
+@media(max-width:600px){
+.container{
+    width: 90%;
+    height: 90%;
+}
+nav{
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+}
+nav .logo{
+    margin-bottom: 20px;
+}
+
+.text{
+    height: 350px;
+    align-items: center;
+    display: flex; 
+    transform: translate(20px , 120px);
+    width: 1000px;
+    width: 100%;
+}
+.text p{
+    font-size: 20px;
+}
+.text h2{
+    font-size: 30px;
+    position: relative;
+    right: 50px;
+}
+nav .sign{
+    left: 0;
+    margin: 50px;
+    position: absolute;
+    top: 10px;
+}
+nav .sign:hover{
+    background-color: #fff;
+    border: 2px solid #111;
+    color: #333;
+    cursor: pointer;
+}
+#p{
+    position: relative;
+    right: 350px;
+    top: 140px;
+}
+button{
+    position: relative;
+    right: 370px;
+    top: 150px;
+    padding: 5px 25px;
+}
+.img{
+  
+   position: relative;
+   right: 500px;
+   top: 300px;
+   width: 40%;
+}
+.img img{
+    width: 400px;
+    
+}
+.text ul li{
+    position: relative;
+    right: 620px;
+    top: 220px;
+}
+}
+@media (min-width:601px) and (max-width:1000px){
+nav{
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    width: 100%;
+}
+nav .logo{
+    margin-bottom: 20px;
+}
+.content{
+    position: relative;
+    top: 130px;
+    right: 40px;
+}
+.text h2 , .text p{
+    position: relative;
+    top: 50px;
+    height: 100%;
+    width: 100%;
+}
+button{
+    position: relative;
+    right: 20px;
+    top: 15px;
+    padding: 5px 25px;
+}
+.sign{
+    left: 0;
+    margin: 20px;
+    position: absolute;
+    top: -170px;
+}
+#p{
+    position: relative;
+    right: -10px;
+    top: 20px;
+}
+img{
+    position: relative;
+    right: 80px;
+    top: 50px;
+    width: 450px;
+}
+.text ul li{
+    position: relative;
+    right: -20px;  
+    top: -225px;
+}
+}
